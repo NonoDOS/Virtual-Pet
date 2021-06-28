@@ -1,0 +1,116 @@
+*
+{
+  font-family: sans-serif;
+}
+
+body
+{
+	color: #1C1C1C; /* near-black */
+}
+
+#petImage
+{
+	width: 100px;
+	height: 76px;
+}
+
+
+#labels
+{
+	margin-left: 10px;
+	padding: 2px 0 2px 5px;
+	width: 80px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#meters
+{
+	padding: 3px 0 4px 0;
+	width: 130px;
+}
+
+/*
+The meters each have a border color matching their background color, to be manipulated via script as indicators.
+*/
+
+#meterLifeBar
+{
+	background-color: #0b420b; /* green */
+	border: 1px solid #0b420b;
+}
+
+#meterHappiness
+{
+	background-color: #ec8804; /* orange */
+	border: 1px solid #ec8804;
+}
+
+#meterHunger
+{
+	background-color: #db0b0b; /* blue */
+	border: 1px solid #db0b0b;
+}
+
+#buttons
+{
+	padding: 18px 4px 0 0;
+	height: 40px;
+	width: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.feedBtn
+{
+	background-color: #04B4AE; /* turquoise */
+  color: #F2F2F2; /* near white */
+  padding: 2px;
+  margin: 1px;
+}
+
+.feedBtn:hover
+{
+  background-color: #01DFD7;
+}
+
+.feedBtn:active
+{
+  background-color: #088A85;
+}
+
+#feedback
+{
+	margin-top: 67px;
+	padding: 3px 0 4px 0;
+	width: 380px;
+	float: none;
+}
+
+
+/* Miscellaneous */
+
+.alignCtr
+{
+	text-align: center;
+}
+
+.backMe
+{
+	background-color: #BDBDBD; /* grey */
+}
+
+.cornered
+{
+	border-radius: 5px;
+}
+
+.floatLeft
+{
+	float: left;
+}
+
+.heightFix
+{
+	height: 15px;
+}
