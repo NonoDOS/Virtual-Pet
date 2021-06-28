@@ -31,7 +31,8 @@ body
 }
 
 /*
-The meters each have a border color matching their background color, to be manipulated via script as indicators.
+The meters each have a border color matching their background color, 
+to be manipulated via script as indicators.
 */
 
 #meterLifeBar
@@ -48,8 +49,8 @@ The meters each have a border color matching their background color, to be manip
 
 #meterHunger
 {
-	background-color: #db0b0b; /* blue */
-	border: 1px solid #db0b0b;
+	background-color: #216ed3; /* blue */
+	border: 1px solid #216ed3;
 }
 
 #buttons
@@ -60,10 +61,26 @@ The meters each have a border color matching their background color, to be manip
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+.playBtn
+{
+  background-color: #ccee0a; /* limegreen */
+  color: #F2F2F2; /* near white */
+  padding: 2px;
+  margin: 1px;
+}
 
+.playBtn:hover
+{
+  background-color: #01DFD7;
+}
+
+.playBtn:active
+{
+  background-color: #088A85;
+}
 .feedBtn
 {
-	background-color: #04B4AE; /* turquoise */
+  background-color: #04B4AE; /* turquoise */
   color: #F2F2F2; /* near white */
   padding: 2px;
   margin: 1px;

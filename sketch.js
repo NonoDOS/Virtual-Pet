@@ -1,12 +1,13 @@
 // variables
-let pet, sadpet, happyPet;
-let foodObj, foodStock;
+let pet, sadpet, happyPet,database;
+let foodObj,foodS, foodStock;
 let fedTime,lastTime,addFood;
 
 addfoodBtn.addEventListener('click', () => {
 	// Set winTime to the current value of seconds
 	// Display a message in winMsg with min/sec of the win button press
 })
+
 
 feedBtn.addEventListener('click', ()=> {
 	// Start a new timer
@@ -17,6 +18,7 @@ feedBtn.addEventListener('click', ()=> {
 startTimer()
 
 function  preload()
+    pet =
     sadPet = loadImage();
     happyPet = loadImage();
 }
@@ -28,7 +30,7 @@ function setup(){
     foodObj = new food();
 
     foodStock = database.ref('food');
-    foodStock.on("value", restock);
+    foodStock.on("value", readstock);
 
     pet = createsprite(800,200,150,150);
     pet.addImage(sadDog);
@@ -53,7 +55,8 @@ function draw(){
 
     Fill(255,255,254);
     textSize(15);
-    if(lastFed >=12){
+   
+        if(lastFed >=12){
         text("Last feed:12am",350,30);
     }
     else if (lastFed == 0){
@@ -67,6 +70,18 @@ function draw(){
     drawSprites();
 
 }
+//function writestock
+function writeStock(x){
+    if(x<=0){
+      x = 0;
+    }
+    else{
+      x = x-1;
+    }
+    database.ref("/").update({
+      Food:x
+    });
+  }
  //function to read stock
  function readStock(data){
      foodS = data.val();

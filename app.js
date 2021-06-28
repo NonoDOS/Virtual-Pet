@@ -15,8 +15,8 @@ const admin = require('./database');
 const db = admin.firestore();
 const ownerCollectionRef = db.collection('owners');//Audio
 const DEFAULT_LIFE_SPAN = 5;
-const LEVEL_TWO = 2;
-const LEVEL_THREE = 3;
+// const LEVEL_TWO = 2;
+// const LEVEL_THREE = 3;
 const PLAYED_BADGE_NAME = 'played badge';
 const FED_BADGE_NAME = 'fed badge';
 const RANDOM_FREQUENCY = 2;
@@ -53,7 +53,7 @@ newGame.addEventListener("click",init)
 
 // 1) Choosing your Pet
 // Print message “Choose the Pet of your favorite”?
-prompt.window("xhose the pet of your fav")
+prompt.window("choose the pet of your favorite")
 // Available pets.            
 
 // Types of Pet
@@ -78,14 +78,14 @@ Phrases:”nomnomnom”,”yay”, “
     function(name)
     console.log(random(phrases))
 }
-let Pet3={
+let Pet3= {
 ‘Photo’ : “.img”
 ‘Name’: “user-input”
  ‘Age’ : “0”
 ‘Hungry’ : boolean
 ‘Happy’: boolean
 Phrases:”nomnomnom”,”yay”, “
-    function(name)
+    function(name);
     console.log(random(phrases))
 }
 // Ask User's Name
@@ -136,7 +136,7 @@ app.intent('Default Welcome Intent - yes', (conv) => {
   // Show Pet and Ask For Pet's Name
   app.intent('Save name - yes - yes', (conv) => {
     const sound = `<audio src='https://actions.google.com/sounds/v1/crowds/female_crowd_celebration.ogg'/>`;
-    const spokenPrompt = 'The grand reveal! It\'s a hamster, just for you.';
+    const spokenPrompt = 'The grand reveal! It\'s a `${petChoice}`, just for you.';
     const spokenPrompt2 = 'Now, this hamster needs a name.  What do you think the name should be?';
     conv.ask(`<speak>${spokenPrompt}${sound}${spokenPrompt2}</speak>`);
     conv.ask(new HtmlResponse({

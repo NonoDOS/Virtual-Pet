@@ -9,55 +9,55 @@
              ctMaxHappiness =  30,
              ctMaxHunger =     30,
              
-             ctCurLife =       ctMaxLife,
-             ctCurHappiness =  ctMaxHappiness,
+             ctCurLife =        ctMaxLife,
+             ctCurHappiness =   ctMaxHappiness,
              ctCurHunger =      ctMaxHunger,
              
-             intervalLife =    1000,
-             intervalHappiness =   2000,
+             intervalLife =    2000,
+             intervalHappiness =   5000,
              intervalHunger =   3000,
              
-                 //When vitamins fall below threshold, pet starts losing health
+                 //When vitamins fall below threshold, pet starts losing health(life)
              threshold =    ctMaxLife * 0.6,
              points =       2,
              widther =      4,
              
                  //When conditions are dangerous, affected stat bars will be hilited in red
-             alive =		true,
-             dangerLife =      false,
-             dangerHappiness =     false,
+             alive =		    true,
+             dangerLife =       false,
+             dangerHappiness =  false,
              dangerHunger =     false,
              
                  //Get meters to change width and border color
              getMtrLife =      document.getElementById('meterLife'),
-             getMtrHappiness =     document.getElementById('meterHappiness'),
+             getMtrHappiness = document.getElementById('meterHappiness'),
              getMtrHunger=     document.getElementById('meterHunger'),
              
-             getStyleLife =    getMtrH.style,
-             getStyleHappiness=   getMtrVM.style,
-             getStyleHunger =   getMtrVR.style,
+             getStyleLife =     getMtrLife.style,
+             getStyleHappiness= getMtrHappiness.style,
+             getStyleHunger =   getMtrHunger.style,
              bdrStart =		"1px solid ",
              
                  //Colors for meter borders
-             clrDfltLife =     "#81F781",  //green
-             clrDflt =    "#FAAC58",  //orange
-             clrDfltVR =    "#5882FA",  //blue
+             clrDfltLife =  "#0b420b",  //green
+             clrDfltHappiness =    "#ec8804",  //orange
+             clrDfltHunger =    "#216ed3",  //blue
                  
-             clrCurLife =      clrDflLife,
-             clrCurHappiness =     clrDfltHappiness,
+             clrCurLife =       clrDflLife,
+             clrCurHappiness =  clrDfltHappiness,
              clrCurHunger =     clrDfltHunger,
              
              clrWarn =      "#FF0040", //red
          
                  //Get buttons for click events
-             getBtnHappiness =     document.getElementById('btnHappiness'),
-             getBtnHunger =     document.getElementById('btnHunger'),
+             getBtnPLay =  document.getElementById('btnPlay'),
+             getBtnFeed =  document.getElementById('btnFeed'),
              
                  //Get eyes to express status
-             getEyes =		document.getElementById('petEyes'),
-             eyesOK =		"o....o",
-              eyesSick = 	"@....@",
-             eyesDead =		"x....x",
+            //  getEyes =		document.getElementById('petEyes'),
+            //  eyesOK =		"o....o",
+            //  eyesSick = 	"@....@",
+            //  eyesDead =		"x....x",
          
                  //Get style for the feedback div
               getStyleFb = 	document.getElementById('feedback').style;
@@ -66,25 +66,25 @@
          getStyleFb.display = 'none';
          meterWidth();
          
-         //At set intervals, vitamin M decreases.
+         //At set intervals, Happiness decreases.
          setInterval(function(){
              if(alive == true){
                     loseHappiness();
-                     checkDangerVM();
+                    checkDangerHappiness();
              }
-         },intervalVM);
+         },intervalHappiness);
          
-         //At set intervals, vitamin R decreases.
+         //At set intervals, Hunger decreases.
          setInterval(function(){
              if(alive == true){
-                    loseHappiness();
-                     checkDangerVR();
+                    loseHunger();
+                    checkDangerHunger();
              }
-         },intervalVR);
+         },intervalHunger);
          
          /*
          What happens in this nest:
-         Health starts to drop if vitamin M or vitamin R are too low.
+         Health starts to drop if Happiness and Hunger are too low.
          Meter graphics are adjusted as applicable.
          If the pet is dead, then the ending events trigger.
          */
@@ -135,8 +135,8 @@
          },intervalLife);
     
     
-         //Clicking on a "Feed" button will restore vitamin and health to your pet.
-         getBtnHappiness.addEventListener("click",function(){
+         //Clicking on a "Play" button will restore Happiness and health to your pet.
+         getBtnPlay.addEventListener("click",function(){
              if(alive == true){
                  if(ctCurHappiness + points <= ctMaxHappiness)
                      {
@@ -155,16 +155,16 @@
                         checkDangerHunger();
                      
                         if(dangerLife == false)
-                        {okH();}
+                        {okLife();}
                         if(dangerHappiness == false)
-                        {okVM();}
+                        {okHappiness();}
                         if(dangerHunger == false)
-                        {okVR();}
+                        {okHunger();}
                  }
              }
          });
          
-         getBtnVR.addEventListener("click",function(){
+         getBtnFeed.addEventListener("click",function(){
              if(alive == true){
                  if(ctCurHunger + points <= ctMaxHunger)
                     {
@@ -178,9 +178,9 @@
                         meterWidth();
                      
                         //Check conditions and adjust graphics as appropriate.
-                        checkDangerH();
-                        checkDangerVM();
-                        checkDangerVR();
+                        checkDangerLife();
+                        checkDangerHappiness();
+                        checkDangerHunger();
                      
                         if(dangerLife == false)
                             {okH();}
@@ -197,9 +197,9 @@
          
          function meterWidth(){
              //This updates the width of the meters.
-                getStyleH.width = ctCurLife * widther + "px";	 
-                 getStyleVM.width = ctCurHappiness * widther + "px";	 
-                 getStyleVR.width = ctCurHappiness * widther + "px";	 
+                getStyleLife.width = ctCurLife * widther + "px";	 
+                 getStyleHappiness.width = ctCurHappiness * widther + "px";	 
+                 getStyleHunger.width = ctCurHappiness * widther + "px";	 
          }
          
          function checkDangerHappiness(){
@@ -243,13 +243,13 @@
              ctCurHunger = ctCurHunger - points;
          }
          
-         function loseH(){
+         function loseLife(){
               ctCurH = ctCurH - points;        
          }
          
-         function warnLife(){
+         function warnHappinesse(){
              getEyes.innerHTML = eyesSick;
-             getStyleVM.border = bdrStart + clrWarn;
+             getStyleHunger.border = bdrStart + clrWarn;
          }
          
          function warnHunger(){
