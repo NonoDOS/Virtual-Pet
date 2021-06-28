@@ -4,9 +4,7 @@
 // Part 1.1
 /*-------------------------------- Constants --------------------------------*/
 // const functions = require('firebase-functions');
-
 // const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG);
-
 // const util = require('./utilities');
 // const format = require('string-template');
 // const Owner = require('./domain/owner');
@@ -90,7 +88,7 @@ Phrases:”nomnomnom”,”yay”, “
 }
 // Ask User's Name
 app.intent('Default Welcome Intent - yes', (conv) => {
-    const sound = `<audio src='https://actions.google.com/sounds/v1/foley/flipping_newspaper_pages.ogg'/>`;
+    const sound = `<audio src='/>`;
     const spokenPrompt = 'That’s great, I’ll be helping you today. It’s nice to meet you. First things first, what’s your name that you’d like to put on the adoption form?';
     conv.ask(`<speak>${spokenPrompt}${sound}</speak>`);
     conv.ask(new HtmlResponse({
@@ -109,16 +107,17 @@ app.intent('Default Welcome Intent - yes', (conv) => {
       }
     }));
   });
-  
+  // 2)Buying the Baby Egg
   // Animate Stamp
+
   app.intent('Save name - yes', (conv) => {
   
-    const pencilSound = `<audio src='https://actions.google.com/sounds/v1/foley/drawing_on_paper_with_charcoal.ogg'/>`;
+    const pencilSound = `<audio src='/>`;
   
     const petSound = `<audio src=''/>`;
   
     const spokenPrompt = 'That\'s great.  You seem qualified to continue with the adoption.  I\'m somewhat of a match maker when it comes to matching pets with the right owner, and I think I have the perfect pet for you.  They\'re cute, furry and ready to be your best friend.  Are you ready?';
-    conv.ask(`<speak>${pencilSound}${spokenPrompt}${hamsterSound}</speak>`);
+    conv.ask(`<speak>${pencilSound}${spokenPrompt}${PetSound}</speak>`);
     conv.ask(new HtmlResponse({
       data: {
         actions: ['SHOW_STAMP']
@@ -135,13 +134,13 @@ app.intent('Default Welcome Intent - yes', (conv) => {
 
   // Show Pet and Ask For Pet's Name
   app.intent('Save name - yes - yes', (conv) => {
-    const sound = `<audio src='https://actions.google.com/sounds/v1/crowds/female_crowd_celebration.ogg'/>`;
+    const sound = `<audio src='>`;
     const spokenPrompt = 'The grand reveal! It\'s a `${petChoice}`, just for you.';
     const spokenPrompt2 = 'Now, this hamster needs a name.  What do you think the name should be?';
     conv.ask(`<speak>${spokenPrompt}${sound}${spokenPrompt2}</speak>`);
     conv.ask(new HtmlResponse({
       data: {
-        actions: ['SHOW_HAMSTER']
+        actions: ['SHOW_PET']
       }
     }));
   });
