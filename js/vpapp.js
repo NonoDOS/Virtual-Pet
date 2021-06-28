@@ -53,11 +53,11 @@
              getBtnPLay =  document.getElementById('btnPlay'),
              getBtnFeed =  document.getElementById('btnFeed'),
              
-                 //Get eyes to express status
-            //  getEyes =		document.getElementById('petEyes'),
-            //  eyesOK =		"o....o",
-            //  eyesSick = 	"@....@",
-            //  eyesDead =		"x....x",
+                 Get eyes to express status
+             getEyes =		document.getElementById('petEyes'),
+             eyesOK =		"o....o",
+             eyesSick = 	"@....@",
+             eyesDead =		"x....x",
          
                  //Get style for the feedback div
               getStyleFb = 	document.getElementById('feedback').style;
