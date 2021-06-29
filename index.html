@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
+    <!-- <link rel="stylesheet" type = "text/css" href = "style.css"/> -->
     <title>Virtual Pet</title>
     
 </head>
 <body>
-    <div class="img"></div>
+    <script src="three.min.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script>
+        let scene, camera, renderer;
+        function init(){
+            scene = new THREE.Scene;
+            camera = new THREE.perspectiveCamera(55, window.innerWidth/window.height,45,3000)
+            camera.position.set(-900,-200,-900);
+
+            renderer = new THREE.webGLRenderer({antialias:true});
+            renderer.setSize( window.innerWidth/window.height);
+            document.body.appendChild(renderer.domElement)
+        
+            let controls = new THREE.OrbitControls(camera);
+            controls.addEventListener('change', renderer);
+            controls.minDistance = 500;
+            controls.maxDistance = 1500;
+
+            let materialArray=[];
+            let texture_ft = new THREE.TextureLoader().load('exosystem_bk.jpg');
+            let texture_ft = new THREE.TextureLoader().load('exosystem_dn.jpg');
+            let texture_ft = new THREE.TextureLoader().load('exosystem_ft.jpg');
+            let texture_ft = new THREE.TextureLoader().load('exosystem_lf.jpg');
+            let texture_ft = new THREE.TextureLoader().load('exosystem_rt.jpg');
+            let texture_ft = new THREE.TextureLoader().load('exosystem_up.jpg');
+
+            materialArray.push(new THREE.MeshBasicMaterial({map: texture_bk}));
+            materialArray.push(new THREE.MeshBasicMaterial({map: texture_db}));
+            materialArray.push(new THREE.MeshBasicMaterial({map: texture_ft}));
+            materialArray.push(new THREE.MeshBasicMaterial({map: texture_lf}));
+            materialArray.push(new THREE.MeshBasicMaterial({map: texture_rt}));
+            materialArray.push(new THREE.MeshBasicMaterial({map: texture_up}));
+
+            for(let i=0;i<6; i++)
+             materialArray[i].side = THREE.BackSide;
+            let skyboxGeo = new.THREE.BoxGeometry(10000,10000,10000);
+            let skybox = new.THREE.MEsh(skyboxGeo, materialArray);
+            scene.add(skybox);
+        }
+        function animate(){
+            renderer.render(scene,camera);
+            requestAnimationFrame(animate);
+        }
+        init();
+    </script>
+    <!-- <div class="img"></div>
     <img>
     <div class="hud"
     <div class="label"></div>
@@ -29,6 +74,6 @@
     <div id="btnFeed"class="feedBtn alignCtr cornered heightFix">Feed</div>-8
     </div>
 
-    <div id="feedbackMsg" class="alignCtr backMe cornered">Oops your pet didn't make it! Please try again...</div>
+    <div id="feedbackMsg" class="alignCtr backMe cornered">Oops your pet didn't make it! Please try again...</div> -->
 </body>
 </html>
