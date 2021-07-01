@@ -53,7 +53,7 @@ Requirements For this projects(technical)
 
    whimsical Sketch and Psuedo Code
    link: https://whimsical.com/pet-game-7E7nPAnET5w1tC5vX4afLj
-   game link : 1) https://romantic-swartz-c420d1.netlify.app/
+   game  mlink : 1) https://romantic-swartz-c420d1.netlify.app/
          link: 2)
          link: 3)
    Instruction link : here
@@ -84,14 +84,14 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
 	-include night modes
 	
 ## Used Libraries:
-    -•   HTML5
-    -•   CSS
-    -•   JavaScript
-    -•   DOM
-    -•   Bootstrap
-    -•   P5.js
-    -•	Git
-    -• 	some P5 libraries
+    •   HTML5
+    •   CSS
+    •   JavaScript
+    •   DOM
+    •   Bootstrap
+    •   P5.js
+    •	Git
+    • 	some P5 libraries
     
 ## Future Work 
 	1.Adding mobile View
@@ -108,7 +108,7 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
 
 ## Acknowledgements
 
-[Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+   [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
  - [ ]
