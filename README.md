@@ -49,7 +49,7 @@ Requirements For this projects(technical)
 • Deployed online                                   @credited to jon Herman[@jo-->
 
 
-#Getting Started
+# Getting Started
 
    whimsical Sketch and Psuedo Code
    link: https://whimsical.com/pet-game-7E7nPAnET5w1tC5vX4afLj
@@ -61,24 +61,24 @@ Requirements For this projects(technical)
    Day/Night Mode:
 		
 		
-#ScreenShots
+# ScreenShots
 
 <img width="581" alt="shthvp" src="https://user-images.githubusercontent.com/44306655/124156608-b0973000-da4c-11eb-95a4-2cf99c5b64dd.png">
 
 <img width="633" alt="Screen Shot 2021-07-01 at 7 41 23 AM" src="https://user-images.githubusercontent.com/44306655/124143792-44163400-da40-11eb-86ec-1be9b62c5c57.png">
 
 
-#Introduction
+# Introduction
 
 A Pet Stimulation game with basic functions such as feeding cleaning and playing with the virtual pet. Addition features would be added according to the project time frame.
 
 
-#Background
+# Background
 
 This game converted for play in a web browser. It can also be enhanced as a mobile game in the future with media queries. It is basically an animal stimulation game with the time lapse,timer count down using setIntervals . Basic Game with basic functions such as feeding, cleaning/brushing/)enhanced with p5 and added functions such as ignoring and talking S#$%^&*()t!!..
 
 
-#Design/Features
+# Design/Features
 	-Amime forest theme
 	-or scenery
 	-include night modes
