@@ -93,14 +93,14 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
     -•	Git
     -• 	some P5 libraries
     
-#Future Work 
-	[1.Adding mobile View]
-	[2. Enhance with graphic]
-	[3. 2D and 3D animation]
-	[4. Other graphic background using three.js and p5.js]
-	[5. Adding more functions like talking a walk, going swimming,]
+Future Work 
+	1.Adding mobile View
+	2. Enhance with graphic
+	3. 2D and 3D animation
+	4. Other graphic background using three.js and p5.js
+	5. Adding more functions like talking a walk, going swimming,
 
-#References 
+##References 
 	1) need work
 	2) more work 
 	3) more work
@@ -116,7 +116,7 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
 #API Reference
 
 #Appendix
--Any other information goes here
+Any other information goes here
 
 #Authors
 -[@NonoDOS}(https://github.com/NonoDOS)
@@ -136,7 +136,7 @@ Please adhere to this project's `code of conduct`.
 
 
 
-#Demo
+Demo
   game link : 1) https://romantic-swartz-c420d1.netlify.app/
                      Step 2)
                      Step 3)
@@ -172,7 +172,7 @@ Usage/Examples
 Running Tests
 
 
-#Tech Stack
+Tech Stack
 
 	Javascript
 	Javascript in vs Code
