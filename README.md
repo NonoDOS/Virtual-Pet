@@ -1,4 +1,4 @@
-Title
+
 # Virtual Pet
 
 A brief description of what this project 
@@ -55,7 +55,7 @@ Requirements For this projects(technical)
 • No remaining dead or commented out code
 • Sensibly named functions and variables
 • Consistent code choices
-• Deployed online                                   @credited to jon Herman-->
+• Deployed online                                   @credited to jon Herman[@jo-->
 
 
 Getting Started
@@ -80,19 +80,21 @@ Background
 This game converted for play in a web browser. It can also be enhanced as a mobile game in the future with media queries. It is basically an animal stimulation game with the time lapse,timer count down using setIntervals . Basic Game with basic functions such as feeding, cleaning/brushing/)enhanced with p5.
 
 #Design/Features
--Amime forest theme
--or scenery
--include night modes
+	-Amime forest theme
+	-or scenery
+	-include night modes
 
 #Future Work 
-1.Adding mobile View
-2. Enhance with graphic
-3. 2D and 3D animation
-4. Other graphic background using three.js and p5.js
-5.
+	1.Adding mobile View
+	2. Enhance with graphic
+	3. 2D and 3D animation
+	4. Other graphic background using three.js and p5.js
+	5. Adding more functions like talking a walk, going swimming, 
 
 #References 
-
+	1) need work
+	2) more work 
+	3) more work
 #Acknowledgements
 
 [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
