@@ -76,7 +76,7 @@ Used Libraries:
 ScreenShots
 	<img width="581" alt="shthvp" src="https://user-images.githubusercontent.com/44306655/124156608-b0973000-da4c-11eb-95a4-2cf99c5b64dd.png">
 
-	<img width="633" alt="Screen Shot 2021-07-01 at 7 41 23 AM" src="https://user-images.githubusercontent.com/44306655/124143792-44163400-da40-11eb-86ec-1be9b62c5c57.png">
+<img width="633" alt="Screen Shot 2021-07-01 at 7 41 23 AM" src="https://user-images.githubusercontent.com/44306655/124143792-44163400-da40-11eb-86ec-1be9b62c5c57.png">
 
 ##Introduction
 
