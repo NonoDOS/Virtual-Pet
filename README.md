@@ -1,7 +1,7 @@
 
 # Virtual Pet (img here)
 
-Project Overview
+## Project Overview
 
 This project is the first project for General Assembly-SEI(software engineering immersive) remote course which starts on 6/7/2021. The project is to choose game of your choice and build it in like a week using external liberies and framework .
 I personally choose the virtual pet with the intention of testing out the animation with p5.js and other tools in the basic javascript knowledge.
@@ -49,7 +49,7 @@ Requirements For this projects(technical)
 • Deployed online                                   @credited to jon Herman[@jo-->
 
 
-# Getting Started
+## Getting Started
 
    whimsical Sketch and Psuedo Code
    link: https://whimsical.com/pet-game-7E7nPAnET5w1tC5vX4afLj
@@ -61,29 +61,29 @@ Requirements For this projects(technical)
    Day/Night Mode:
 		
 		
-# ScreenShots
+## ScreenShots
 
 <img width="581" alt="shthvp" src="https://user-images.githubusercontent.com/44306655/124156608-b0973000-da4c-11eb-95a4-2cf99c5b64dd.png">
 
 <img width="633" alt="Screen Shot 2021-07-01 at 7 41 23 AM" src="https://user-images.githubusercontent.com/44306655/124143792-44163400-da40-11eb-86ec-1be9b62c5c57.png">
 
 
-# Introduction
+## Introduction
 
 A Pet Stimulation game with basic functions such as feeding cleaning and playing with the virtual pet. Addition features would be added according to the project time frame.
 
 
-# Background
+## Background
 
 This game converted for play in a web browser. It can also be enhanced as a mobile game in the future with media queries. It is basically an animal stimulation game with the time lapse,timer count down using setIntervals . Basic Game with basic functions such as feeding, cleaning/brushing/)enhanced with p5 and added functions such as ignoring and talking S#$%^&*()t!!..
 
 
-# Design/Features
+## Design/Features
 	-Amime forest theme
 	-or scenery
 	-include night modes
 	
-# Used Libraries:
+## Used Libraries:
     -•   HTML5
     -•   CSS
     -•   JavaScript
@@ -93,7 +93,7 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
     -•	Git
     -• 	some P5 libraries
     
-# Future Work 
+## Future Work 
 	1.Adding mobile View
 	2. Enhance with graphic
 	3. 2D and 3D animation
@@ -106,26 +106,25 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
 	3) more work
 	
 
-# Acknowledgements
+## Acknowledgements
 
 [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
  - [ ]
 
-# API Reference
+## API Reference
 
-# Appendix
+## Appendix
 Any other information goes here
 
-# Authors
+## Authors
 -[@NonoDOS}(https://github.com/NonoDOS)
 
-#Badges
+## Badges
 
 
 
-# Contributing
 ## Contributing
 
 Contributions are always welcome!
@@ -136,12 +135,12 @@ Please adhere to this project's `code of conduct`.
 
 
 
-# Demo
+## Demo
   game link : 1) https://romantic-swartz-c420d1.netlify.app/
                      Step 2)
                      Step 3)
 
-# Game Play
+## Game Play
 
 Title : Virtual Pet By Nono D
 
@@ -172,7 +171,7 @@ Usage/Examples
 Running Tests
 
 
-# Tech Stack
+## Tech Stack
 
 	Javascript
 	Javascript in vs Code
@@ -181,19 +180,22 @@ Running Tests
 	Server:
 	Image Hosting:
 
-# Support
-# Screenshots
-# Run Local
-# Roadmap
-# Related
-# Optimizations
-# Logo
-# License
-# Lessons
-# Installation
-# Feedback
-# Features
-# FAQ
-# Environment Variables
-# Documentation
-# Deployment
+## Support
+## Screenshots
+## Run Local
+## Roadmap
+## Related
+## Optimizations
+## Logo
+## License
+## Lessons
+## Installation
+Simple Browser game
+## Feedback
+## Features
+## FAQ
+	leave comment [Here]
+## Environment Variables
+## Documentation
+## Deployment
+	Set Date : July 2 2021
