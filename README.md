@@ -1,7 +1,7 @@
 
-# Virtual Pet
+# Virtual Pet (img here)
 
-A brief description of what this project 
+Project Overview
 
 This project is the first project for General Assembly-SEI(software engineering immersive) remote course which starts on 6/7/2021. The project is to choose game of your choice and build it in like a week using external liberies and framework .
 I personally choose the virtual pet with the intention of testing out the animation with p5.js and other tools in the basic javascript knowledge.
@@ -35,15 +35,6 @@ By July1st and July2nd, in class
     Share the experiences?
         What are the biggest challenges?
         What are the key takeaways/learnings?
-
-Used Libraries:
-    •    HTML
-    •    CSS
-    •    JavaScript
-    •    DOM
-    •   Bootstrap
-    •   P5.js
-    and some P5 libraries
     
 Requirements For this projects(technical)
 • Renders in browser
@@ -76,14 +67,24 @@ ScreenShots
 
 A Pet Stimulation game with basic functions such as feeding cleaning and playing with the virtual pet. Addition features would be added according to the project time frame.
 
-Background
+
+## Background
 This game converted for play in a web browser. It can also be enhanced as a mobile game in the future with media queries. It is basically an animal stimulation game with the time lapse,timer count down using setIntervals . Basic Game with basic functions such as feeding, cleaning/brushing/)enhanced with p5.
+
 
 #Design/Features
 	-Amime forest theme
 	-or scenery
 	-include night modes
-
+	
+#Used Libraries:
+    •    HTML
+    •    CSS
+    •    JavaScript
+    •    DOM
+    •   Bootstrap
+    •   P5.js
+    and some P5 libraries
 #Future Work 
 	1.Adding mobile View
 	2. Enhance with graphic
@@ -95,6 +96,7 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
 	1) need work
 	2) more work 
 	3) more work
+	
 #Acknowledgements
 
 [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
@@ -160,7 +162,7 @@ Used By
 Usage/Examples
 Running Tests
 
-Tech Stack
+##Tech Stack
 
 	Javascript
 	Javascript in vs Code
