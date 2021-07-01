@@ -94,16 +94,16 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
     -• 	some P5 libraries
     
 #Future Work 
-	-1.Adding mobile View
-	-2. Enhance with graphic
-	-3. 2D and 3D animation
-	-4. Other graphic background using three.js and p5.js
-	-5. Adding more functions like talking a walk, going swimming, 
+	[1.Adding mobile View]
+	[2. Enhance with graphic]
+	[3. 2D and 3D animation]
+	[4. Other graphic background using three.js and p5.js]
+	[5. Adding more functions like talking a walk, going swimming,]
 
 #References 
-	-1) need work
-	-2) more work 
-	-3) more work
+	1) need work
+	2) more work 
+	3) more work
 	
 
 #Acknowledgements
