@@ -4,76 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type = "text/css" href = "style.css"/> -->
+    <link rel="stylesheet"href="style.css" />
+    <script defer src="app.js"></script>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+>
+
     <title>Virtual Pet</title>
-    
 </head>
+
 <body>
-    <script src="three.min.js"></script>
-    <script src="OrbitControls.js"></script>
-    <script>
-        let scene, camera, renderer;
-        function init(){
-            scene = new THREE.Scene;
-            camera = new THREE.perspectiveCamera(55, window.innerWidth/window.height,45,3000)
-            camera.position.set(-900,-200,-900);
+    <header>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Game Play</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Rule</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Game Play and Rule</button>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                  1)Make sure your pet’s Life Bar is not below warning level<br>
+                  2)Feeding him and Playing with him would be a great help<br>
+                  3)He has two simple needs : to keep Happiness and Hunger level up<br>
+                  4)Talking shit/Displaining to your pet when you are busy and frustrated and ignoring him will lead to his sad mood and eventually it will affect his heath and hence the Life Bar.<br>
+                  5)Ready for your Virtual Pet!<br>
+                    Bring it on!
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                  Simple Rule ....Don't Let him die or Run Away..Have Fun!!
+                </div>
+              </div>
+            </div>
+          </div>
+       
+    </header>
 
-            renderer = new THREE.webGLRenderer({antialias:true});
-            renderer.setSize( window.innerWidth/window.height);
-            document.body.appendChild(renderer.domElement)
-        
-            let controls = new THREE.OrbitControls(camera);
-            controls.addEventListener('change', renderer);
-            controls.minDistance = 500;
-            controls.maxDistance = 1500;
+ <div class="" id="body-container">
+     <div id = "left-column"> 
+    <h1>Welcome to Virtual Pet</h1> 
+	<h2 id="message">Let's Play!!</h2>
+    <button id = "light-dark-button">Day/Night</button>
+    <button id = "sound">sound</button>
+        <div id="petImage">
+        <img src="petImg/smallpup.jpeg" alt="Small Image" id="small-image">
+        </div>
+    <div class="hud">
+        <div class="label">
+            <div class="labelLife">Life</div>
+            <div class="labelHappiness">Happiness</div>
+            <div class="labelHunger">Hunger</div>
+            </div>
 
-            let materialArray=[];
-            let texture_ft = new THREE.TextureLoader().load('exosystem_bk.jpg');
-            let texture_ft = new THREE.TextureLoader().load('exosystem_dn.jpg');
-            let texture_ft = new THREE.TextureLoader().load('exosystem_ft.jpg');
-            let texture_ft = new THREE.TextureLoader().load('exosystem_lf.jpg');
-            let texture_ft = new THREE.TextureLoader().load('exosystem_rt.jpg');
-            let texture_ft = new THREE.TextureLoader().load('exosystem_up.jpg');
+        <div id="meters">
+            <div id="meterLife" ></div>
+            <div id="meterHappiness"></div>
+            <div id="meterHunger"></div>
+        </div>
 
-            materialArray.push(new THREE.MeshBasicMaterial({map: texture_bk}));
-            materialArray.push(new THREE.MeshBasicMaterial({map: texture_db}));
-            materialArray.push(new THREE.MeshBasicMaterial({map: texture_ft}));
-            materialArray.push(new THREE.MeshBasicMaterial({map: texture_lf}));
-            materialArray.push(new THREE.MeshBasicMaterial({map: texture_rt}));
-            materialArray.push(new THREE.MeshBasicMaterial({map: texture_up}));
-
-            for(let i=0;i<6; i++)
-             materialArray[i].side = THREE.BackSide;
-            let skyboxGeo = new.THREE.BoxGeometry(10000,10000,10000);
-            let skybox = new.THREE.MEsh(skyboxGeo, materialArray);
-            scene.add(skybox);
-        }
-        function animate(){
-            renderer.render(scene,camera);
-            requestAnimationFrame(animate);
-        }
-        init();
-    </script>
-    <!-- <div class="img"></div>
-    <img>
-    <div class="hud"
-    <div class="label"></div>
-    <div class="labelHealth">Life</div>
-    <div class="labelHappiness">Happiness</div>
-    <div class="labelHunger">Hunger</div>
+        </div>
     </div>
-
-    <div id="meters" class="backMe floatleft">
-    <div id="meterLife" class="cornered heightFix"></div>
-    <div id="meterHappiness"class="cornered heightFix"></div>
-    <div id="meterHunger"class="cornered heihtFix"></div>
+    <div id="buttons">
+        <div id="btnPlay">Play</div>
+        <div id="btnFeed">Feed</div>
+        <div id="btnClean">Clean</div>
+        <div id="btnIgnore">Ignore</div>
+        <div id="btnTalkShit">Discipline</div>
     </div>
-
-    <div id="buttons"class="backMe floatleft">
-    <div id="btnPlay"class="playBtn alignCtr cornered heightFix">Play</div>
-    <div id="btnFeed"class="feedBtn alignCtr cornered heightFix">Feed</div>-8
-    </div>
-
-    <div id="feedbackMsg" class="alignCtr backMe cornered">Oops your pet didn't make it! Please try again...</div> -->
+ </div>
+ <script 
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"
+	></script>
 </body>
 </html>
