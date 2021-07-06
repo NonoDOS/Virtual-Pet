@@ -1,5 +1,5 @@
 
-# Virtual Pet (img here)
+# Virtual Pet 
 
 ## Project Overview
 
@@ -7,65 +7,21 @@ This project is the first project for General Assembly-SEI(software engineering 
 I personally choose the virtual pet with the intention of testing out the animation with p5.js and other tools in the basic javascript knowledge.
 
 
-<!-- Timeline/Deadline 
-BY JUNE 25TH 
-    Choose the game and the title 
-
-    Wireframe the main game screen (view on whimsical)
-    PseudoCode
-    GamePlay
-
-By 25th, the end of Class
-    submit Github Repo
-
-By jun 29, end of the class
-
-    Deploy the game
-    Project presentation
-    
-By July1st and July2nd, in class
-
-    Intro of the Project (README)
-    Demonstrate project 
-        deploy the game and launch the game from the link from ReadME
-        Play the game
-    Discuss the code
-        show js and its functions and how it works
-        some HTML and CSS 
-    Share the experiences?
-        What are the biggest challenges?
-        What are the key takeaways/learnings?
-    
-Requirements For this projects(technical)
-• Renders in browser
-• Win/loss logic(renders win/loss messages in HTML)
-• Properly indented HTML, CSS, and JS with consistent vertical white  space
-• Light/Dark mode
-• Uses CSS Flexbox/Grid
-• Consistent and polished UI
-• No remaining dead or commented out code
-• Sensibly named functions and variables
-• Consistent code choices
-• Deployed online                                   @credited to jon Herman[@jo-->
-
-
 ## Getting Started
 
-   whimsical Sketch and Psuedo Code
-   link: https://whimsical.com/pet-game-7E7nPAnET5w1tC5vX4afLj
-   game  mlink : 1) https://romantic-swartz-c420d1.netlify.app/
-         link: 2)
-         link: 3)
-   Instruction link : here
-   Reset Mode: If the pet die, it will be the losing of the game.
-   Day/Night Mode:
+   [whimsical](https://whimsical.com/pet-game-7E7nPAnET5w1tC5vX4afLj)
+
+   [Deploy-Link](https://romantic-swartz-c420d1.netlify.app/)
 		
 		
 ## ScreenShots
+![IMG_4861 2](https://user-images.githubusercontent.com/44306655/124306437-41d4d800-db1b-11eb-8be2-6a7bf61a2849.jpg)
+![IMG_4869](https://user-images.githubusercontent.com/44306655/124306310-1356fd00-db1b-11eb-8ae9-a45fd43adb33.jpg)
+![IMG_4868 3](https://user-images.githubusercontent.com/44306655/124306724-a5f79c00-db1b-11eb-8199-6d744370ac9b.jpg)
+![IMG_4870](https://user-images.githubusercontent.com/44306655/124306369-279afa00-db1b-11eb-9762-f60bce88dfb4.jpg)
+![IMG_4874 3](https://user-images.githubusercontent.com/44306655/124306514-587b2f00-db1b-11eb-9f40-5e7634779ff5.jpg)
 
-<img width="581" alt="shthvp" src="https://user-images.githubusercontent.com/44306655/124156608-b0973000-da4c-11eb-95a4-2cf99c5b64dd.png">
 
-<img width="633" alt="Screen Shot 2021-07-01 at 7 41 23 AM" src="https://user-images.githubusercontent.com/44306655/124143792-44163400-da40-11eb-86ec-1be9b62c5c57.png">
 
 
 ## Introduction
@@ -75,13 +31,13 @@ A Pet Stimulation game with basic functions such as feeding cleaning and playing
 
 ## Background
 
-This game converted for play in a web browser. It can also be enhanced as a mobile game in the future with media queries. It is basically an animal stimulation game with the time lapse,timer count down using setIntervals . Basic Game with basic functions such as feeding, cleaning/brushing/)enhanced with p5 and added functions such as ignoring and talking S#$%^&*()t!!..
+ It is basically an animal stimulation game with the time lapse,timer count down using setIntervals . Basic Game with basic functions such as feeding, cleaning/brushing/)enhanced with p5 and added functions such as ignoring and  Displine!!..
 
 
 ## Design/Features
 	-Amime forest theme
-	-or scenery
-	-include night modes
+	- Pet Images reacting the Action buttons
+	-include night mode with galaxy view
 	
 ## Used Libraries:
     •   HTML5
@@ -89,11 +45,9 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
     •   JavaScript
     •   DOM
     •   Bootstrap
-    •   P5.js
     •	Git
-    • 	some P5 libraries
     
-## Future Work 
+## Future Works 
 	1.Adding mobile View
 	2. Enhance with graphic
 	3. 2D and 3D animation
@@ -101,50 +55,32 @@ This game converted for play in a web browser. It can also be enhanced as a mobi
 	5. Adding more functions like talking a walk, going swimming,
 
 ## References 
-	1) need work
-	2) more work 
-	3) more work
+	1) lectures Notes and recordings from SEI
+    2) [css zen garden](http://www.csszengarden.com/)
+    3) [mdn](https://developer.mozilla.org/en-US/docs/Web/javascript)
+    4[bootstrap](https://getbootstrap.com/docs/5.0/layout/columns/)
 	
-
-## Acknowledgements
+## Credits
 
    [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
- - [ ]
-
-## API Reference
-
-## Appendix
-Any other information goes here
+ - [saddogimg](https://beagleplanet.org/a-puppys-life-inside-the-cone-of-shame/)
+ - [runningawaypup](https://www.clipartmax.com/middle/m2i8H7G6N4m2Z5Z5_dog-dog-running-away-clipart/)
+ - [disciplinedogimg](https://www.fotosearch.com/illustration/bad-dog.html)
+ - [galaxy,nightimg](http://www.wallpapers-full-hd.com/backgrounds/galaxy-gory-night-sky.jpg)
+ - [other dog pics](https://images.clipartof.com/)
+ - [background_img](https://www.wallpaperflare.com/static/302/504/847/video-games-final-fantasy-xiii-forest-screen-shot-wallpaper.jpg)
 
 ## Authors
 -[@NonoDOS}(https://github.com/NonoDOS)
 
-## Badges
-
-
-
-## Contributing
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.
-
-
-
-## Demo
-  game link : 1) https://romantic-swartz-c420d1.netlify.app/
-                     Step 2)
-                     Step 3)
-
 ## Game Play
+### Story
 
 Title : Virtual Pet By Nono D
 
-1) Welcome to Virtual Pet? Are you Ready to have a virtual pet of your own which is low cost and lower maintain. The only Rule though don’t let your pet die.
+1) Welcome to Virtual Pet? Are you Ready to have a virtual pet of your own which is low cost and lower maintainance. The only Rule though don’t let your pet die.
 
 2)Are you ready to adopt the pet today?
 
@@ -163,39 +99,6 @@ Msg: which one would you like?
 1. Make sure your pet’s Life Bar is not below warning level
 2. Feeding him and Playing with him would be a great help
 3. He has two simple needs : to keep Happiness and Hunger level up
-4. Talking shit to your pet when you are busy and frustrated and ignoring him will lead to his sad mood and eventually it will affect his heath and hence the Life Bar.
+4. Talking shit/Displaining to your pet when you are busy and frustrated and ignoring him will lead to    his sad mood and eventually it will affect his heath and hence the Life Bar.
 5. Ready for your Virtual Pet!
 6. Bring it on!
-Used By
-Usage/Examples
-Running Tests
-
-
-## Tech Stack
-
-	Javascript
-	Javascript in vs Code
-	Node.js
-	Deploy: Custom Script
-	Server:
-	Image Hosting:
-
-## Support
-## Screenshots
-## Run Local
-## Roadmap
-## Related
-## Optimizations
-## Logo
-## License
-## Lessons
-## Installation
-Simple Browser game
-## Feedback
-## Features
-## FAQ
-	leave comment [Here]
-## Environment Variables
-## Documentation
-## Deployment
-	Set Date : July 2 2021
